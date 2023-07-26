@@ -12,7 +12,14 @@ for (let i = 0; i < NUM_SQUARES_PER_SIDE; i++) {
         square.style.width = (CONTAINER_SIDE_LENGTH / NUM_SQUARES_PER_SIDE) + "px";
         square.style.height = (CONTAINER_SIDE_LENGTH / NUM_SQUARES_PER_SIDE) + "px";
         square.style.border = "1px solid black";
-        square.addEventListener("mouseenter", () => square.style.backgroundColor = getRandomColor());
+        square.addEventListener("mouseenter", function() {
+            square.style.backgroundColor = getRandomColor();
+            square.style.transition = "background-color 0s";
+        });
+        square.addEventListener("mouseleave", function() {
+            square.style.backgroundColor = "white";
+            square.style.transition = "background-color 1s";
+        })
         row.appendChild(square);
     }
 }
