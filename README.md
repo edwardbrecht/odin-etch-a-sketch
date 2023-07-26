@@ -1,1 +1,2 @@
 # odin-etch-a-sketch
+This page is based off the "etch a sketch" project in The Odin Project's curriculum. The only edit I made was to make the squares fade back to white on mouseleave. This creates a nice "mouse trail" effect. The page loads with a 16x16 grid ready to go and there is a button to create a new grid with a custom number of sides (up to 100). The project is an exercise in basic javascript - specifically DOM manipulation to create the grid and editing styles within even listeners.
