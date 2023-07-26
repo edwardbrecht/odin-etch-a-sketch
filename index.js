@@ -12,6 +12,11 @@ for (let i = 0; i < NUM_SQUARES_PER_SIDE; i++) {
         square.style.width = (CONTAINER_SIDE_LENGTH / NUM_SQUARES_PER_SIDE) + "px";
         square.style.height = (CONTAINER_SIDE_LENGTH / NUM_SQUARES_PER_SIDE) + "px";
         square.style.border = "1px solid black";
+        square.addEventListener("mouseenter", () => square.style.backgroundColor = getRandomColor());
         row.appendChild(square);
     }
+}
+
+function getRandomColor() {
+    return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
 }
