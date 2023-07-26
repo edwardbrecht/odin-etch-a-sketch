@@ -7,7 +7,13 @@
 body {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#new-grid-btn {
+    width: 900px;
+    height: 50px;
+    margin-top: 15px;
+}
